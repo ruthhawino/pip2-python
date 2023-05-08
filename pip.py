@@ -126,6 +126,37 @@ numbers = [3,5,45,97,32,22,10,19,39,43]
 
 
 
+# 8.Find the common numbers in two lists (without using a tuple or set)
+list_a = 1, 2, 3, 4,
+list_b = 2, 3, 4, 5
+common_numbers = [a for a in list_b]
+print(common_numbers)
+
+
+
+#9. Use a nested list comprehension to find all of the
+#numbers from 1-1000 that are divisible by any single digit besides 1 (2-9)
+divisible_numbers = [num for num in range(1, 1001)
+                     if any(num % digit == 0 for digit in range(2, 10))]
+print(divisible_numbers(2,10))
+#10. Wrivite a Python function to remove all vowels in a string
+def remove_vowels(string):
+    vowels = "aeiouAEIOU"
+    new_string = ""
+    for char in string:
+        if char not in vowels:
+            new_string += char
+    return new_string
+my_string = "Hey Emmamai"
+new_string = remove_vowels(my_string)
+print(new_string)
+
+
+
+
+
+
+
 
 
 
